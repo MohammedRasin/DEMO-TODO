@@ -95,10 +95,6 @@ function Home() {
     },
   });
 
-  // useEffect(() => {
-  //   getTodos();
-  // }, [change]);v
-
   const addField = e => {
     const { name, value } = e.target;
     console.log(name, 'name -> value', value);
@@ -149,6 +145,7 @@ function Home() {
           <input name="title" onChange={addField} placeholder="title" />
           <input name="desc" onChange={addField} placeholder="desc" />
           <button onClick={() => console.log(movie)}>console</button>
+          <p>please fil the form</p>
         </Modal>
 
         {queryData?.map(item => (
